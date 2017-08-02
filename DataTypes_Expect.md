@@ -115,3 +115,156 @@ courseId | No | The id of the course
 department | No | The name of the department of the course
 courseName | No | The name of the course
 teacherName | No | The name of the teacher
+
+# JSON
+```
+{
+  "users": [
+    {
+      "id": "string",
+      "username": "string",
+      "phone": "string",
+      "password": "string",
+      "firstName": "string",
+      "lastName": "string",
+      "email": "string",
+      "avatar": "string",
+      "lessons": [
+        {
+          "id": "string",
+          "courseId": "string",
+          "groupId": "string",
+          "startDate": "string",
+          "endDate": "string",
+          "roomId": "string",
+          "roomDescription": "string",
+          "status": "string",
+          "department": "string",
+          "name": "string",
+          "credits": "string",
+          "teacherName": "string"
+        }
+      ],
+      "exams": [
+        {
+          "id": "string",
+          "courseId": "string",
+          "groupId": "string",
+          "startDate": "string",
+          "endDate": "string",
+          "roomId": "string",
+          "roomDescription": "string",
+          "status": "string",
+          "department": "string",
+          "name": "string",
+          "credits": "string",
+          "teacherName": "string",
+          "moed": "string",
+          "type": "string"
+        }
+      ],
+      "grades": [
+        {
+          "id": "string",
+          "courseId": "string",
+          "department": "string",
+          "name": "string",
+          "credits": "string",
+          "teacherName": "string",
+          "values": [
+            {
+              "id": "string",
+              "type": "string",
+              "credits": "string",
+              "moed": "string",
+              "failed": "boolean",
+              "value": "string",
+              "semester": "string"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "courses": [
+    {
+      "id": "string",
+      "department": "string",
+      "name": "string",
+      "credits": "string",
+      "teacherName": "string"
+    }
+  ]
+}
+```
+
+# XML
+```
+<?xml version="1.0" encoding="UTF-8" ?>
+<root>
+	<users>
+		<id>string</id>
+		<username>string</username>
+		<phone>string</phone>
+		<password>string</password>
+		<firstName>string</firstName>
+		<lastName>string</lastName>
+		<email>string</email>
+		<avatar>string</avatar>
+		<lessons>
+			<id>string</id>
+			<courseId>string</courseId>
+			<groupId>string</groupId>
+			<startDate>string</startDate>
+			<endDate>string</endDate>
+			<roomId>string</roomId>
+			<roomDescription>string</roomDescription>
+			<status>string</status>
+			<department>string</department>
+			<name>string</name>
+			<credits>string</credits>
+			<teacherName>string</teacherName>
+		</lessons>
+		<exams>
+			<id>string</id>
+			<courseId>string</courseId>
+			<groupId>string</groupId>
+			<startDate>string</startDate>
+			<endDate>string</endDate>
+			<roomId>string</roomId>
+			<roomDescription>string</roomDescription>
+			<status>string</status>
+			<department>string</department>
+			<name>string</name>
+			<credits>string</credits>
+			<teacherName>string</teacherName>
+			<moed>string</moed>
+			<type>string</type>
+		</exams>
+		<grades>
+			<id>string</id>
+			<courseId>string</courseId>
+			<department>string</department>
+			<name>string</name>
+			<credits>string</credits>
+			<teacherName>string</teacherName>
+			<values>
+				<id>string</id>
+				<type>string</type>
+				<credits>string</credits>
+				<moed>string</moed>
+				<failed>boolean</failed>
+				<value>string</value>
+				<semester>string</semester>
+			</values>
+		</grades>
+	</users>
+	<courses>
+		<id>string</id>
+		<department>string</department>
+		<name>string</name>
+		<credits>string</credits>
+		<teacherName>string</teacherName>
+	</courses>
+</root>
+```
