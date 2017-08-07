@@ -24,7 +24,7 @@ id | No | The id of the course
 department | No | The name of the department of the course
 courseName | No | The name of the course
 teacherName | No | The name of the teacher
-credits | No | The credits of the course as _'0.0'_ string
+credits | No | The credits of the course
 
 ## Lesson
 A data type describing common lesson information. Should be extended with `Course` data.
