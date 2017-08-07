@@ -32,16 +32,12 @@ A data type describing common lesson information. Should be extended with `Cours
 Field | Optional? | Description
 ------------ | ------------- | -------------
 id | No | The id of the lesson
-startDate | No | The lesson's date of start in _ISO 8601 format_,
-endDate | No | The lesson's date of start in _ISO 8601 format_,
+startDate | No | The lesson's date of start in _YYYY-MM-DDThh:mm:ss format_,
+endDate | No | The lesson's date of start in _YYYY-MM-DDThh:mm:ss format_,
 roomId | Yes | The id of the lesson's room
 roomDescription | Yes | The description of the lesson's room
 status | Yes | The status of the record
 courseId | No | The id of the course
-department | No | The name of the department of the course
-courseName | No | The name of the course
-teacherName | No | The name of the teacher
-credits | No | The credits of the course as _'0.0'_ string
 
 ## Exam
 A data type describing common exam information. Should be extended with `Course` data.
@@ -51,17 +47,13 @@ Field | Optional? | Description
 id | No | The id of the exam
 moed | No | The moed of the exam as _number_
 semester | Yes | The semester of the exam as _number_ or _zero_ if _annual_
-startDate | No | The exam's date of start in _ISO 8601 format_,
-endDate | No | The exam's date of start in _ISO 8601 format_,
+startDate | No | The exam's date of start in _YYYY-MM-DDThh:mm:ss format_,
+endDate | No | The exam's date of start in _YYYY-MM-DDThh:mm:ss	format_,
 roomId | Yes | The id of the exam's room
 roomDescription | Yes | The description of the exam's room
 status | Yes | The status of the record
 type | Yes | The type of exam
 courseId | No | The id of the course
-department | No | The name of the department of the course
-courseName | No | The name of the course
-teacherName | No | The name of the teacher
-credits | No | The credits of the course as _'0.0'_ string
 
 ## Grade
 
@@ -76,10 +68,6 @@ failed | Yes | The failed of the grade, as boolean
 value | Yes | The value of the grade
 semester | Yes | The semester property of the grade
 courseId | No | The id of the course
-department | No | The name of the department of the course
-courseName | No | The name of the course
-teacherName | No | The name of the teacher
-credits | No | The credits of the course as _'0.0'_ string
 
 ## Message
 A data type describing a message.
@@ -87,16 +75,14 @@ A data type describing a message.
 Field | Optional? | Description
 ------------ | ------------- | -------------
 id | Yes | The id of the message
+userId | No | The id of the user
 title | No | The title of the message
 message | No | The message content
-attachment | Yes | The attachment of the message as _link_
+attachment | Yes? | The attachment of the message as _link_
 sender | Yes | The name of message sender
-createAt | No | The createdAt date in _ISO 8601 format_,
-updatedAt | No | The updatedAt date in _ISO 8601 format_,
+createAt | No | The createdAt date in _YYYY-MM-DDThh:mm:ss	format_,
+updatedAt | No | The updatedAt date in _YYYY-MM-DDThh:mm:ss	format_,
 courseId | Yes | The id of the course
-department | Yes | The name of the department of the course
-courseName | Yes | The name of the course
-teacherName | Yes | The name of the teacher
 
 # JSON
 ```
